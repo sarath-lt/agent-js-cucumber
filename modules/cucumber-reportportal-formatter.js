@@ -113,6 +113,7 @@ const createRPFormatterClass = (config) =>
         startTime: this.reportportal.helpers.now(),
         description: this.config.description || '',
         attributes,
+        id: this.config.id,
         rerun: this.isRerun,
         rerunOf: this.rerunOf,
         ...(this.config.mode && { mode: this.config.mode }),
