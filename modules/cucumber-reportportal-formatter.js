@@ -586,9 +586,9 @@ const createRPFormatterClass = (config) =>
 
       const launchId = this.storage.getLaunchTempId();
       this.reportportal.getPromiseFinishAllItems(launchId).then(() => {
-        this.reportportal.finishLaunch(launchId, {
-          ...(this.customLaunchStatus && { status: this.customLaunchStatus }),
-        });
+        // this.reportportal.finishLaunch(launchId, {
+        //   ...(this.customLaunchStatus && { status: this.customLaunchStatus }),
+        // });
         this.storage.setLaunchTempId(null);
         this.storage.setCurrentFeatureUri(null);
         this.storage.setFeatureTempId(null);
